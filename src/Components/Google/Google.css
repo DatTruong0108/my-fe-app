@@ -1,0 +1,33 @@
+.google-button {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: #000000 solid 1px;
+    border-radius: 6px;
+    color: black;
+}
+
+.google-button i {
+    margin-right: 15px;
+}
+
+.google-button:hover {
+    background-color: rgb(135, 46, 62);
+}
+
+img.google-img{
+    height: 10px;
+    width: 20px;
+    object-fit: cover;
+}
+
+.google-content {
+    color: black;
+}
+
+.google-icon {
+    color: black;
+}

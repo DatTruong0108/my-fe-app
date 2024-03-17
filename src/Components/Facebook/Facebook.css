@@ -1,0 +1,30 @@
+.fb-login-button {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: #000000 solid 1px;
+    border-radius: 6px;
+    color: black;
+}
+
+.fb-login-button:hover {
+    background-color: rgb(18, 111, 211);
+}
+
+.facebook-icon{
+    height: 28px;
+    width: 28px;
+    margin-right: 9px;
+    color: #0171d3;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}

@@ -13,7 +13,13 @@
 }
 
 .fb-login-button:hover {
-    background-color: rgb(18, 111, 211);
+    background-color: rgb(101, 176, 247);
+}
+
+.fb-login-button img {
+    display: inline-block;
+    max-width: 40px;
+    max-height: 20px;
 }
 
 .facebook-icon{

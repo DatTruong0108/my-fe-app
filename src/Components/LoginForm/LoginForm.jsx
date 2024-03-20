@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './LoginForm.css';
 import data from "../../utils/phone-prefixes.json";
 import Google from "../Google/Google";
@@ -18,10 +19,10 @@ function LoginForm() {
         <div className="container container-fluid">
             <div className="left-panel"></div>
             <div className='login-form card'>
-                <form className='form' style={{ width: '85%' }}>
-                    <h3 style={{ textAlign: 'center' }}>Đăng nhập</h3>
-                    <div className='mb-3 mt-4'>
-                        <label htmlFor='username' className='form-label'>Số điện thoại <span style={{ color: 'red' }}>*</span></label>
+                <form className='form' style={{ width: '100%' }}>
+                    <h5 style={{ textAlign: 'center' }}>Đăng nhập</h5>
+                    <div className='mb-3 mt-3'>
+                        <label htmlFor='phone-number' className='form-label'>Số điện thoại <span style={{ color: 'red' }}>*</span></label>
                         <div className='input-group mb-3'>
                             <div className="dropdown">
                                 <button className="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
@@ -33,9 +34,9 @@ function LoginForm() {
                                     ))}
                                 </ul>
                             </div>
-                            <input type='text' placeholder='Nhập số điện thoại' className='form-control' id='phone-number' />
+                            <input autoFocus type='text' placeholder='Nhập số điện thoại' className='form-control input-number' id='phone-number' />
                         </div>
-                        <div className='mb-3'>
+                        <div className='mb-1'>
                             <label htmlFor='password' className='form-label'>Mật khẩu <span style={{ color: 'red' }}>*</span></label>
                             <input type='password' className='form-control' id='password' />
                         </div>
@@ -45,14 +46,16 @@ function LoginForm() {
                     </div>
                     <div className="form-group mt-4">
                         <div id="form-message mt-2 mb-2"></div>
-                        <button style={{ backgroundColor: '#ba3838', color: 'black' }} type="submit" className="btn btn-warning submit-btn text-light">Đăng nhập</button>
+                        <button type="submit" className="btn submit-btn text-light">Đăng nhập</button>
                     </div>
-                    <div className='mb-3 text-center'>
-                        <span style={{ color: 'rgba(123, 129, 129, 0.614)', fontSize: 'small' }}>Hoặc</span>
+                    <div className='mb-3 or-text text-center'>
+                        <div className="separator"></div>
+                        <div style={{ flex: '0 0 auto', margin: '0 10px', color: 'rgba(123, 129, 129, 0.614)', fontSize: 'small' }}>Hoặc</div>
+                        <div className="separator"></div>
                     </div>
                     <Google />
                     <Facebook />
-                    <span className='register-link'>Bạn chưa có tài khoản? <a href='#' style={{ color: 'blue', textAlign: 'center' }}>Đăng ký</a></span>
+                    <span className='register-link'>Bạn chưa có tài khoản? <a href='#' style={{ color: 'rgb(46, 210, 210)', textAlign: 'center' }}>Đăng ký</a></span>
                 </form>
             </div>
             <div className="right-panel">
@@ -63,7 +66,6 @@ function LoginForm() {
                     <span className="title">Brand Manager</span>
                 </div>
             </div>
-            
         </div>
     );
 }

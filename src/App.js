@@ -1,3 +1,5 @@
+import React, { useEffect, useState } from "react";
+
 import LoginForm  from "./Components/LoginForm/LoginForm";
 
 // trang login sau khi bấm -> quản lý acc
@@ -8,6 +10,16 @@ import LoginForm  from "./Components/LoginForm/LoginForm";
 // detail kênh: theo thiết kế
 
 function App() {
+  const [backendData, setBackendData] = useState([{}]);
+
+  useEffect(() => {
+    fetch("/api").then(
+      response => response.json()
+    ).then(
+      data => setBackendData(data)
+    )
+  }, []);
+
   return (
     <LoginForm />
   );

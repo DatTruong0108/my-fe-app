@@ -7,9 +7,10 @@
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    border: #827979 solid 1px;
+    border: #ccc solid 1px;
     border-radius: 6px;
     color: black;
+    height: 53px;
 }
 
 .fb-login-button:hover {
@@ -19,7 +20,7 @@
 .fb-login-button img {
     display: inline-block;
     max-width: 40px;
-    max-height: 20px;
+    max-height: 22.5px;
 }
 
 .facebook-icon{

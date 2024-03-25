@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import LoginForm  from "./Components/LoginForm/LoginForm";
+import LoginForm from "./Pages/LoginForm/LoginForm";
 
 // trang login sau khi bấm -> quản lý acc
 // menu: quản lý acc + quản lý kênh 

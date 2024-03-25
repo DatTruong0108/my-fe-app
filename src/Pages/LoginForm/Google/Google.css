@@ -5,7 +5,7 @@
     background-color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    border: #827979 solid 1px;
+    border: #ccc solid 1px;
     border-radius: 6px;
     color: black;
 }
@@ -21,7 +21,7 @@
 .google-text img {
     display: inline-block;
     max-width: 50px;
-    max-height: 25px;
+    max-height: 32px;
 }
 
 .google-content {

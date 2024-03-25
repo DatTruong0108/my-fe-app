@@ -8,6 +8,7 @@ function Google() {
                 <div className="gsi-material-button-state"></div>
                 <div className="gsi-material-button-content-wrapper google-text">
                     {/* <i className="bx bxl-google google-icon"></i> */}
+                    {/* <span style={{ marginRight: '1px' }}></span> */}
                     <img src="/assets/images/google.png" alt="" /> <span className="sign-in-gg-text">Sign in with Google</span>
                 </div>
             </button>
